@@ -1,0 +1,28 @@
+<!DOCTYPE html> <!-- добавлен тег <!DOCTYPE html> -->
+<html lang="ru"> <!-- добавлен тег <html lang="ru"> -->
+<!-- ниже добавлены <head></head>, <body></body> -->
+    <head>
+        <title>html</title> <!-- добавлен title -->
+    </head>
+    <body>
+        <header>Узнай на все 100 %!</header> 
+        <section>
+            <h1>Языки программирования</h1>
+            <figure>
+                <img src="https://www.python.org/static/img/python-logo.png" alt="Логотип Python"/> <!-- добавлен атрибут alt для изображения -->
+                <figcaption>Логотип Python</figcaption>
+            </figure>
+            <article>
+                <p>Изучать Python очень весело</p>
+                <p>Но нужно читать и практиковаться</p>
+                <p>И сильно-сильно стараться</p>
+            </article>
+        </section>
+        <nav>
+            <a href="#">Главная страница</a><br>  
+            <a href="#">Раздел 1</a><br>
+            <a href="#">Раздел 2</a><br>
+        </nav>
+        <footer>Успехов в освоении</footer>
+    </body>
+</html>
