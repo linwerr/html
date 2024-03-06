@@ -319,3 +319,12 @@ if (count($arr10) == 3) {
     echo "Сумма элементов массива: $sum";
 }
 echo "<br>";
+
+
+//task 19
+echo "<br> task 19 <br>";
+$l = '';
+for ($i = 0; $i < 20; $i++){
+    $l .= 'x';
+    echo $l, "<br>";
+}
