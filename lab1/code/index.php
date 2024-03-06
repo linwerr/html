@@ -32,3 +32,8 @@ $months = 11;
 $days = $months * 16;
 $daysPerLanguage = $days / $numLanguages;
 echo "У Мэг ушло $daysPerLanguage дня <br>";
+
+
+//task 12
+echo 8**2;
+echo "<br>";
