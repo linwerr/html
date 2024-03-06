@@ -24,3 +24,11 @@ $this_month = 1089.98;
 $dif = $last_month - $this_month;
 echo "Разница: $dif";
 echo "<br>";
+
+
+//task 11
+$numLanguages = 4;
+$months = 11;
+$days = $months * 16;
+$daysPerLanguage = $days / $numLanguages;
+echo "У Мэг ушло $daysPerLanguage дня <br>";
