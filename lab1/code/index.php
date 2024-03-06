@@ -146,3 +146,15 @@ for ($i = 0; $i < count($arr3); $i++){
 }
 echo "Надо сложить $count";
 echo "<br>";
+
+
+//task 15
+echo "<br> task 15 <br>";
+function printStringReturnNumber($str)
+{
+    echo $str. "<br>";
+    return intval($str);
+}
+$myNum = printStringReturnNumber("5");
+echo $myNum;
+echo "<br>";
