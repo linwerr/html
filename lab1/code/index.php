@@ -274,3 +274,48 @@ echo $arr9[count($arr9) - 1];
 echo "<br>";
 echo $arr9[count($arr9) - 2];
 echo "<br>";
+
+
+//task 18
+echo "<br> task 18 <br>";
+function trueFalse($one, $two)
+{
+    if ($one + $two > 10) {
+        return true;
+    } else return false;
+}
+echo trueFalse(2,9);
+echo "<br>";
+
+function trueFalse1($one, $two)
+{
+    if ($one == $two) {
+        return true;
+    } else return false;
+}
+echo trueFalse1(2,2);
+echo "<br>";
+
+$test = 0;
+if ($test == 0) echo 'верно';
+echo "<br>";
+
+$age = rand(1, 105);
+echo "age = $age <br>";
+if ($age < 10 || $age > 99) {
+    echo "число меньше 10 или больше 99 <br>";
+} else {
+    $sum = array_sum(str_split($age)); //сумма элементов массива
+    if ($sum <= 9) {
+        echo "сумма цифр однозначна <br>";
+    } else {
+        echo "сумма цифр двузначна <br>";
+    }
+}
+
+$arr10 = [1, 2, 3];
+if (count($arr10) == 3) {
+    $sum = array_sum($arr10);
+    echo "Сумма элементов массива: $sum";
+}
+echo "<br>";
