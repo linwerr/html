@@ -209,3 +209,68 @@ function sumDigits($number)
 }
 echo sumDigits(456);
 echo "<br>";
+
+
+//task 17
+echo "<br> task 17 <br>";
+$arr4 = ['x'];
+$n = 7;
+for ($i = 1; $i < $n; $i++){
+    $arr4[$i] = $arr4[$i - 1].'x';
+}
+print_r($arr4);
+echo "<br>";
+
+function arrayFill($v, $count) {
+    $arr5 = [];
+    for ($i = 0; $i < $count; $i++) {
+        $arr5[] = $v;
+    }
+    return $arr5;
+}
+$r = arrayFill('x', 5);
+print_r($r);
+echo "<br>";
+
+$arr6 = [[1, 2, 3], [4, 5], [6]];
+$sum = 0;
+foreach ($arr6 as $i) {
+    foreach ($i as $j) {
+        $sum += $j;
+    }
+}
+echo "Двумер массив: $sum";
+echo "<br>";
+
+$arr7 = [];
+$k = 1; //счетчик
+for ($i = 0; $i < 3; $i++) {
+    for ($j = 0; $j < 3; $j++) {
+        $arr7[$i][$j] = $k;
+        $k++;
+    }
+}
+print_r($arr7);
+echo "<br>";
+
+$arr8 = [2, 5, 3, 9];
+$result = ($arr8[0] * $arr8[1]) + ($arr8[2] * $arr8[3]);
+echo $result;
+echo "<br>";
+
+$user = ['name' => "Ivan", 'surname' => "Ivanov", 'patronymic' => "Ivanovich"];
+echo $user["surname"] . " " . $user['name'] . " " . $user['patronymic'];
+echo "<br>";
+
+$date = ['year' => '2024', 'month' => '03', 'day' => '06'];
+echo $date['year'] . '-' . $date['month'] . '-' . $date['day'];
+echo "<br>";
+
+$arr9 = ['a', 'b', 'c', 'd', 'e'];
+echo count($arr9);
+echo "<br>";
+
+echo $arr9[count($arr9) - 1];
+echo "<br>";
+echo $arr9[count($arr9) - 2];
+echo "<br>";
