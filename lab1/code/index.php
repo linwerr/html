@@ -328,3 +328,27 @@ for ($i = 0; $i < 20; $i++){
     $l .= 'x';
     echo $l, "<br>";
 }
+
+
+//task 20
+echo "<br> task 20 <br>";
+$arr11 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+echo array_sum($arr11)/count($arr11), "<br>";
+
+echo array_sum(range(1, 100)), "<br>";
+
+$arr12 = [1, 2, 3, 4, 5];
+$res = array_map('sqrt', $arr12); //возвращает массив после применения функции к элементу
+print_r($res);
+echo "<br>";
+
+$numbers = range(1, 26);
+$letters = range('a', 'z');
+$res1 = array_combine($letters, $numbers); //возвращает скомбинированный массив
+print_r($res1);
+echo "<br>";
+
+$string = '1234567890';
+$arr13 = str_split($string, 2); //разбивает строку на подстроки с длиной 2
+$res2 = array_sum($arr13);
+echo $res2;
