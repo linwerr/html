@@ -37,3 +37,15 @@ echo "У Мэг ушло $daysPerLanguage дня <br>";
 //task 12
 echo 8**2;
 echo "<br>";
+
+
+//task 13
+$myNum = 73;
+$answer = $myNum;
+$answer += 2;
+$answer *= 2;
+$answer -= 2;
+$answer /= 2;
+$answer -= $myNum;
+echo "answer: $answer";
+echo "<br>";
