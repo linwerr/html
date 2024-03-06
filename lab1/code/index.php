@@ -158,3 +158,54 @@ function printStringReturnNumber($str)
 $myNum = printStringReturnNumber("5");
 echo $myNum;
 echo "<br>";
+
+
+//task 16
+echo "<br> task 16 <br>";
+function increaseEnthusiasm($str1)
+{
+    return $str1 . "!";
+}
+echo increaseEnthusiasm("wow"), "<br>";
+
+function repeatThreeTimes($str2)
+{
+    return $str2 . $str2 . $str2;
+}
+echo repeatThreeTimes("cat"), "<br>";
+echo increaseEnthusiasm(repeatThreeTimes("yes")), "<br>";
+
+function cut($str3, $k = 10)
+{
+    $strResult = '';
+    for ($i=0; $i<$k; $i++) {
+        $strResult[$i] = $str3[$i];
+    }
+    return $strResult;
+}
+echo cut("beautiful", 3),"<br>";
+
+function outputElements($array, $index = 0)
+{
+    echo $array[$index++] . " ";
+    if ($index < count($array)) {
+        outputElements($array, $index);
+    }
+}
+outputElements([1, 2, 3, 4, 5, 6, 7]);
+echo "<br>";
+
+function sumDigits($number)
+{
+    $sum = 0;
+    foreach (str_split("$number") as $digit) {
+        $sum += intval($digit);
+    }
+    if ($sum > 9) {
+        return sumDigits($sum);
+    } else {
+        return $sum;
+    }
+}
+echo sumDigits(456);
+echo "<br>";
